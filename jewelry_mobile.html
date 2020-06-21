@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Jewelry Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="sass.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/e6ea2868e2.js"></script>
+
+
+</head>
+
+  <body>
+
+  <h1> <a class="nav-link" href="mobile.html"><img src="https://user-images.githubusercontent.com/63485300/85195687-99891280-b30f-11ea-8c97-da3aa7a93f3a.png" width="250" height="50"></a></h1>
+
+  <div class="w3-container">
+    <h2>Gallery</h2>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-container w3-third">
+      <img src="https://user-images.githubusercontent.com/63485300/85219832-dcb3b600-b3e1-11ea-82b4-caa8787b0dba.jpg" style="width:70%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-container w3-third">
+      <img src="https://user-images.githubusercontent.com/63485300/85219832-dcb3b600-b3e1-11ea-82b4-caa8787b0dba.jpg" style="width:70%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-container w3-third">
+      <img src="https://user-images.githubusercontent.com/63485300/85219832-dcb3b600-b3e1-11ea-82b4-caa8787b0dba.jpg" style="width:70%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-container w3-third">
+      <img src="https://user-images.githubusercontent.com/63485300/85219832-dcb3b600-b3e1-11ea-82b4-caa8787b0dba.jpg" style="width:70%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-container w3-third">
+      <img src="https://user-images.githubusercontent.com/63485300/85219832-dcb3b600-b3e1-11ea-82b4-caa8787b0dba.jpg" style="width:70%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-container w3-third">
+      <img src="https://user-images.githubusercontent.com/63485300/85219832-dcb3b600-b3e1-11ea-82b4-caa8787b0dba.jpg" style="width:70%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-container w3-third">
+      <img src="https://user-images.githubusercontent.com/63485300/85219832-dcb3b600-b3e1-11ea-82b4-caa8787b0dba.jpg" style="width:70%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-container w3-third">
+      <img src="https://user-images.githubusercontent.com/63485300/85219832-dcb3b600-b3e1-11ea-82b4-caa8787b0dba.jpg" style="width:70%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-container w3-third">
+      <img src="https://user-images.githubusercontent.com/63485300/85219832-dcb3b600-b3e1-11ea-82b4-caa8787b0dba.jpg" style="width:70%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img id="img01" style="width:100%">
+    </div>
+  </div>
+
+  <script>
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+  }
+  </script>
+
+</body>
+</html>
