@@ -1,0 +1,249 @@
+
+$color: #DCDCDC;
+$text-color: teal;
+$bg-color: #0abab5;
+$font-med: 14px;
+$font-large: 20px;
+$text-font: verdana;
+$grid-color:#007bff;
+$font-stack:    Helvetica, sans-serif;
+$primary-color: white;
+$small: 300px;
+$medium: 900px;
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+
+.container > div {
+    background-color: $primary-color;
+    font-size: $font-med;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+  height:300px;
+}
+
+// Change width to change the size of the image
+.carousel{
+  width:100%;
+    margin: 0 auto;
+}
+
+.carousel-item{
+  width: 100%;
+height:100%;
+position: relative;
+}
+
+
+
+
+
+
+.navlink a {
+ color: $primary-color;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:$primary-color;
+  width: 100%;
+}
+
+.grid {
+    background-color: $primary-color;
+    display: grid;
+    padding: 5px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    /* auto means that each colum will automatically adjust */
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-item {
+    background-color: $primary-color;
+    font-size: $font-med;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding:20px;
+}
+
+
+%message {
+    font-family: $text-font;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+    color: $primary-color;
+    text-decoration-color: $primary-color;
+
+}
+
+
+/* The alert message box */
+.alert {
+  @extend %message;
+  background-color: $bg-color;
+}
+
+/* The close button */
+.closebtn {
+  @extend %message;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+.a {
+    color: black;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box:nth-child(even) {
+  background-color: #ccc;
+  color: #000;
+}
+
+.wrapper {
+  width: 600px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-flow: column;
+}
+
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: ridge;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .collapsible:hover {
+      background-color: $bg-color;
+    }
+
+    /* Style the collapsible content. Note: hidden by default */
+    .content {
+      padding: 18px;
+      display: none;
+      overflow: hidden;
+      background-color: $primary-color;
+    }
+body {
+  font-family: $text-font;
+  font: 100% $font-stack;
+  color: $primary-color;
+    margin: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color:$color;
+  }
+}
+
+
+navbar-text{
+  text-align: center;
+  font-size: $font-large;
+  color: black;
+}
+
+
+
+h2{
+  text-align: center;
+  font-size: $font-large;
+  color: black;
+
+}
+h1{
+  text-align: center;
+  font-family: $text-font;
+  font-size: $font-large;
+  color: black;
+  padding: 10px;
+
+}
+
+// this is a scss file that the html refers to for styling
+// you would also cconvert the scss into css using an app and that app wil continute to convert the file
+ul{
+  text-align: center;
+  font-size: $font-large;
+  color: black;
+}
+
+li{
+  text-align: center;
+  font-size: $font-large;
+  color: black;
+}
+ol{
+  font-size: $font-med;
+  color:black;
+}
+
+div{
+  text-align: center;
+  font-size: $font-med;
+}
+p{
+  text-align: center;
+  font-size: $font-med;
+  color: black;
+}
+
+    table {
+        border: 2px solid black;
+        border-collapse: collapse;
+        width: 50%;
+        text-align: center;
+
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+
+    th {
+        background-color: lightgray;
+    }
